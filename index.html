@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wizzard Game - Ana Cornachi - Resilia</title>
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-cover">
+      <div class="container">
+        <figure class="logo">
+          <img class="brand-image" src="./src/assets/images/logo.svg" alt="" />
+        </figure>
+        <div class="options">
+          <h1 class="title">Selecione seu bruxo...</h1>
+          <div class="select-options">
+            <button class="button-option" onclick="activatePrompt()">
+              <img
+                class="character-image"
+                src="./src/assets/images/severo-snape.png"
+                alt="Severo Snape"
+              />
+              <h2 class="option">1. Severo Snape</h2>
+            </button>
+            <button class="button-option" onclick="activatePrompt()">
+              <img
+                class="character-image"
+                src="./src/assets/images/harry-potter.png"
+                alt="Severo Snape"
+              />
+              <h2 class="option">2. Harry Potter</h2>
+            </button>
+            <button class="button-option" onclick="activatePrompt()">
+              <img
+                class="character-image"
+                src="./src/assets/images/dumbledore.png"
+                alt="Severo Snape"
+              />
+              <h2 class="option">3. Dumbledore</h2>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/characters.js"></script>
+  </body>
+</html>

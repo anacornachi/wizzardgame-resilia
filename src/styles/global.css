@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-cover {
+  align-items: center;
+  backdrop-filter: brightness(0.1);
+  background-color: rgba(0, 0, 0, 90%);
+  background-image: url("../assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.container {
+  background-color: rgba(43, 80, 54, 0.7);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 80%;
+  max-width: 80%;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  height: 20%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.brand-image {
+  position: absolute;
+  top: -75px;
+}
+
+.options {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: center;
+  padding: 30px 100px;
+  width: 100%;
+}
+
+.title {
+  font-family: "Bungee", cursive;
+  height: 10%;
+}
+
+.select-options {
+  align-items: center;
+  display: flex;
+  height: 90%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-option {
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 328px;
+  width: 280px;
+}
+
+.option {
+  font-family: "Bungee", cursive;
+}
+
+.character-image {
+  border-radius: 25px;
+  border: 2px solid rgb(43, 119, 7);
+  height: 80%;
+  width: 100%;
+}
+
+.description {
+  font-size: 27px;
+}
+
+.options__description {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: flex-start;
+  padding: 50px 100px;
+}
+
+.next__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Bungee", cursive;
+  font-size: 30px;
+  margin-top: 110px;
+}
+
+.button__option {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Bungee", cursive;
+  font-size: 20px;
+  margin-top: 110px;
+  width: 20%;
+}
+
+.options__area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
