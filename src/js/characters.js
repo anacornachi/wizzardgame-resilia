@@ -5,7 +5,6 @@ const level = isNaN(levelNumber) ? "pilot" : levelNumber;
 const character = window.location.pathname.split("/")[1];
 
 const isGameOver = window.location.pathname.split("/")[2] === "game-over";
-console.log(isGameOver);
 
 if (isGameOver) {
   const music = new Audio("../../src/assets/audio/avada-kedavra.mp3");
@@ -127,12 +126,6 @@ function loadLevel(level, character) {
     }
   }, 500);
 }
-
-function loadPageInfo() {
-  console.log({ character, level });
-}
-
-loadPageInfo();
 
 let loaded = false;
 if (character && level !== "pilot" && !loaded) {

@@ -127,7 +127,7 @@ body {
   border: none;
   cursor: pointer;
   font-family: "Bungee", cursive;
-  font-size: 20px;
+  font-size: 15px;
   height: 100%;
   width: 33%;
 }
@@ -151,7 +151,7 @@ body {
 
 .end-description {
   font-family: "Bungee", cursive;
-  font-size: 40px;
+  font-size: 25px;
   width: 100%;
   max-width: 70%;
   margin: 0 auto;
@@ -297,10 +297,19 @@ body {
     flex-direction: column;
   }
   .button__option {
-    font-size: 15px;
+    font-size: 10px;
     width: 100%;
   }
   .options__description {
     gap: 5px;
+  }
+  .description {
+    font-size: 10px;
+  }
+  .end-description {
+    font-size: 15px;
+  }
+  .end-game {
+    font-size: 20px;
   }
 }

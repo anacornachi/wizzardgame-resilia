@@ -22,7 +22,7 @@ function activatePrompt() {
   } else if (witcher.toLowerCase() === "dumbledore" || witcher == 3) {
     return redirectTo("dumbledore", "pilot");
   } else {
-    console.log("indisponivel");
+    alert("Personagem indisponível, tente novamente. ");
   }
 }
 
