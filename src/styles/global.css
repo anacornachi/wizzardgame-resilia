@@ -11,35 +11,35 @@ body {
 }
 
 .main-cover {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 90%);
+  align-items: center;
   backdrop-filter: brightness(0.1);
+  background-color: rgba(0, 0, 0, 90%);
   background-image: url("../assets/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
+  width: 100vw;
 }
 
 .container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: rgba(43, 80, 54, 0.7);
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   max-height: 80%;
   max-width: 80%;
+  width: 100%;
 }
 
 .logo {
-  width: 100%;
-  height: 10%;
   display: flex;
+  height: 10%;
   justify-content: center;
   position: relative;
+  width: 100%;
 }
 
 .brand-image {
@@ -47,50 +47,50 @@ body {
 }
 
 .options {
-  width: 100%;
-  height: 90%;
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  height: 90%;
   justify-content: center;
   padding: 100px 100px 40px 100px;
-  gap: 40px;
+  width: 100%;
 }
 
 .title {
-  font-family: "Bungee", cursive;
-  height: 20%;
-  display: flex;
   align-items: center;
+  display: flex;
+  font-family: "Bungee", cursive;
   font-size: 30px;
+  height: 20%;
 }
 
 .select-options {
-  width: 100%;
-  height: 80%;
   align-items: center;
   display: flex;
-  justify-content: space-between;
   gap: 60px;
+  height: 80%;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .button-option {
+  align-items: center;
   background: none;
   border: none;
   cursor: pointer;
-  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 33%;
   height: 100%;
   padding: 0 20px;
+  width: 33%;
 }
 
 .option {
+  align-items: center;
+  display: flex;
   font-family: "Bungee", cursive;
   height: 20%;
-  display: flex;
-  align-items: center;
 }
 
 .character-image {
@@ -101,12 +101,81 @@ body {
   object-fit: cover;
 }
 
+.options__description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  padding: 50px 100px;
+}
+
+.description {
+  font-size: 25px;
+  height: 60%;
+}
+
+.options__area {
+  display: flex;
+  gap: 20px;
+  height: 20%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button__option {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Bungee", cursive;
+  font-size: 20px;
+  height: 100%;
+  width: 33%;
+}
+
+.single__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Bungee", cursive;
+  font-size: 30px;
+}
+
+.end-game {
+  align-items: center;
+  display: flex;
+  font-family: "Bungee", cursive;
+  font-size: 50px;
+  height: 30%;
+  justify-content: center;
+}
+
+.end-description {
+  font-family: "Bungee", cursive;
+  font-size: 40px;
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  height: 60%;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 1400px) {
   .select-options {
     gap: 30px;
   }
   .button-option {
     padding: 40px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .description {
+    font-size: 20px;
+  }
+  .end-description {
+    font-size: 30px;
   }
 }
 
@@ -132,11 +201,32 @@ body {
     height: 60%;
     width: 100%;
   }
+  .button__option {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
   .character-image {
     height: 40%;
+  }
+  .options__area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+  .button__option {
+    width: 100%;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .end-description {
+    font-size: 25px;
+  }
+  .end-game {
+    font-size: 40px;
   }
 }
 
@@ -168,6 +258,19 @@ body {
     align-items: center;
     padding: 0;
   }
+  .options__description {
+    padding: 30px;
+  }
+
+  .end-game {
+    font-size: 30px;
+  }
+  .single__button {
+    font-size: 20px;
+  }
+  .end-description {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -185,41 +288,19 @@ body {
   .option {
     font-size: 15px;
   }
-} /* AQUI COMEÇA O ESTILO DO JOGO MESMO */
 
-/* .description {
-  font-size: 27px;
+  .description {
+    font-size: 15px;
+  }
+  .options__area {
+    display: flex;
+    flex-direction: column;
+  }
+  .button__option {
+    font-size: 15px;
+    width: 100%;
+  }
+  .options__description {
+    gap: 5px;
+  }
 }
-
-.options__description {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  justify-content: flex-start;
-  padding: 50px 100px;
-}
-
-.next__button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: "Bungee", cursive;
-  font-size: 30px;
-  margin-top: 110px;
-}
-
-.button__option {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: "Bungee", cursive;
-  font-size: 20px;
-  margin-top: 110px;
-  width: 20%;
-}
-
-.options__area {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-} */
