@@ -1,4 +1,9 @@
 function redirectTo(character, page, subpage = undefined) {
+  if (window.location.href.includes("wizzardgame-resilia")) {
+    return (window.location.href = `/wizzardgame-resilia/${character}/${page}${
+      subpage ? `/${subpage}.html` : ".html"
+    }`);
+  }
   window.location.href =
     window.location.origin +
     `/${character}/${page}${subpage ? `/${subpage}.html` : ".html"}`;

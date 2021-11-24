@@ -2,7 +2,9 @@ const levelNumber = Number(
   window.location.pathname.split("/")[3]?.replace(".html", "")
 );
 const level = isNaN(levelNumber) ? "pilot" : levelNumber;
-const character = window.location.pathname.split("/")[1];
+const character = window.location.href.includes("wizzardgame-resilia")
+  ? window.location.pathname.split("/")[2]
+  : window.location.pathname.split("/")[1];
 
 const isGameOver = window.location.pathname.split("/")[2] === "game-over";
 
